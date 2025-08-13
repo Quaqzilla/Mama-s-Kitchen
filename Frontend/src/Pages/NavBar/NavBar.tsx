@@ -1,5 +1,10 @@
+import * as React from 'react';
+import Paper from '@mui/material/Paper';
+import InputBase from '@mui/material/InputBase';
+import IconButton from '@mui/material/IconButton';
+import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
-import MenuIcon from '@mui/icons-material/Menu';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 export function NavBar(){
@@ -7,17 +12,25 @@ export function NavBar(){
     return(
         <div className="flex justify-center">
             <div className="flex flex-row justify-between items-center
-             p-10 w-screen bg-sidebar-primary text-white">
+             p-10 w-screen bg-yellow-400 text-black">
                 
-                <div>
+                <div className='hidden lg:flex'>
                     <img src="" alt="Business-logo" />
                 </div>
 
-                <div className="hidden lg:flex flex-row text-xl gap-3">
-                    <a href="">Snacks</a>
-                    <a href="">Drinks</a>
-                    <a href="">Savoury</a>
-                    <a href="">Sweet</a>
+                <div>
+                     <Paper
+                        component="form"
+                        sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 300, color: 'black' }}
+                        >
+                            <InputBase
+                            sx={{ ml: 1, flex: 1 }}
+                            placeholder="Search Mama`s Kitchen"
+                            />
+                            <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
+                            <SearchIcon />
+                            </IconButton>
+                    </Paper>
                 </div>
 
                 <div className="hidden lg:flex items-center gap-3 cursor-pointer">
@@ -25,9 +38,7 @@ export function NavBar(){
                     <LocalMallIcon sx={{fontSize: 38}}/>
                 </div>
 
-                <div className="lg:hidden">
-                    <MenuIcon/>
-                </div>
+                
 
             </div>
         </div>
