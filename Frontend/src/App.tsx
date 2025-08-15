@@ -1,11 +1,12 @@
 import './App.css'
 import { Landing } from './Components/Landing'
+import { Admin } from './Components/Admin'
 
 function App() {
 
   return (
     <div>
-      <Landing/>
+      <Admin/>
     </div>
   )
 }
