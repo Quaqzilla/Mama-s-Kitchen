@@ -12,7 +12,7 @@ export function NavBar(){
     return(
         <div className="flex justify-center">
             <div className="flex flex-row justify-between items-center
-             p-10 w-screen bg-yellow-400 text-black">
+             p-10 w-screen text-black">
                 
                 <div className='hidden lg:flex'>
                     <img src="" alt="Business-logo" />

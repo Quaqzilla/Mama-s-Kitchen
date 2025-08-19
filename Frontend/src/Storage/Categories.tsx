@@ -9,7 +9,7 @@ const options = [
         "Image": savoury
     },
     {
-        "Category": "Sweet",
+        "Category": "Sweets",
         "Image": sweets
     },
     {

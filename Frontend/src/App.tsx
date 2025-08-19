@@ -4,6 +4,8 @@ import { Admin } from './Components/Admin'
 import { Account } from './Components/Account'
 import { PastOrders } from './Components/PastOrders'
 import { LoginPage } from './Components/LoginPage'
+import { Selected } from './Components/Selected'
+import { CheckOut } from './Components/CheckOut'
 
 function App() {
 
