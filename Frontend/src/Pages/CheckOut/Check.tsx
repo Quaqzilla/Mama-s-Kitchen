@@ -4,15 +4,15 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { ChevronDownIcon } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Calendar } from "@/components/ui/calendar"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Button } from "@/Components/ui/button"
+import { Calendar } from "@/Components/ui/calendar"
+import { Input } from "@/Components/ui/input"
+import { Label } from "@/Components/ui/label"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
+} from "@/Components/ui/popover"
 import CloseIcon from '@mui/icons-material/Close';
 import { useAuthControls } from "Firebase/functions";
 

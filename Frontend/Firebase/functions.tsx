@@ -12,7 +12,7 @@ export function useAuthControls() {
     const auths = getAuth();
     const user = auths.currentUser;
 
-    const googleSignIn = async (e) => {
+    const googleSignIn = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!isLogged) {
             try {
@@ -27,7 +27,7 @@ export function useAuthControls() {
         }
     };
 
-    const emailSignIn = async (e) => {
+    const emailSignIn = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!isLogged) {
             try {

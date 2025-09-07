@@ -1,8 +1,8 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/Components/ui/avatar"
 import * as React from "react"
 import { Check, ChevronsUpDown } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/Components/ui/button"
 import {
   Command,
   CommandEmpty,
@@ -10,14 +10,14 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "@/components/ui/command"
+} from "@/Components/ui/command"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+} from "@/Components/ui/popover"
+import { Input } from "@/Components/ui/input"
+import { Label } from "@/Components/ui/label"
 import { private_createTypography } from "@mui/material/styles"
 import { DataGrid} from '@mui/x-data-grid';
 import Paper from '@mui/material/Paper';

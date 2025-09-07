@@ -1,8 +1,8 @@
 import * as React from 'react';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Avatar from '@mui/material/Avatar';
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Input } from "@/Components/ui/input";
+import { Label } from "@/Components/ui/label";
 import { useAuthControls } from 'Firebase/functions';
 
 export function Acc() {

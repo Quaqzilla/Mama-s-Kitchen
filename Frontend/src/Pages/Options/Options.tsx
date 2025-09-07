@@ -1,14 +1,14 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/Components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/Components/ui/carousel";
 import options from '../../Storage/Categories';
 
 export function Options(){
