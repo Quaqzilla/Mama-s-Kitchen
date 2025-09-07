@@ -18,7 +18,6 @@ import {
 } from "@/Components/ui/popover"
 import { Input } from "@/Components/ui/input"
 import { Label } from "@/Components/ui/label"
-import { private_createTypography } from "@mui/material/styles"
 import { DataGrid} from '@mui/x-data-grid';
 import Paper from '@mui/material/Paper';
 
@@ -72,7 +71,7 @@ const columns = [
     description: 'This column has a value getter and is not sortable.',
     sortable: false,
     width: 160,
-    valueGetter: (value, row) => `${row.firstName || ''} ${row.lastName || ''}`,
+    valueGetter: (value: any, row: any) => `${row.firstName || ''} ${row.lastName || ''}`,
   },
 ];
 
@@ -194,8 +193,7 @@ export function Page(){
                             </Command>
                         </PopoverContent>
                         </Popover>
-                </div>
-
+                                   
                 
 
             </div>
@@ -317,5 +315,7 @@ export function Page(){
                 
             </div>            
         </div>
+        </div>
+        
     )
 }

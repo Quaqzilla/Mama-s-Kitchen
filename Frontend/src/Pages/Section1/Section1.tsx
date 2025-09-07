@@ -1,5 +1,3 @@
-import bg from './../../assets/bg.webp';
-import bc from './../../assets/Cloudy.svg';
 
 export function Section1() {
   return (

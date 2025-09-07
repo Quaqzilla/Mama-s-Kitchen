@@ -1,10 +1,8 @@
-import * as React from 'react';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 export function NavBar(){
@@ -12,7 +10,7 @@ export function NavBar(){
     return(
         <div className="flex justify-center">
             <div className="flex flex-row justify-between items-center
-             p-10 w-screen text-black">
+             p-10 w-screentext-black">
                 
                 <div className='hidden lg:flex'>
                     <img src="" alt="Business-logo" />

@@ -1,9 +1,8 @@
-import * as React from 'react';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Avatar from '@mui/material/Avatar';
 import { Input } from "@/Components/ui/input";
 import { Label } from "@/Components/ui/label";
-import { useAuthControls } from 'Firebase/functions';
+import { useAuthControls } from '../../../Firebase/functions';
 
 export function Acc() {
     const {
@@ -24,7 +23,7 @@ export function Acc() {
                 <div className='flex flex-row justify-around items-center le gap-2'>
                     <Avatar
                         alt="Remy Sharp"
-                        src={user?.photoURL}
+                        src={user?.photoURL ?? undefined}
                         sx={{ width: 120, height: 120 }}
                     />
 
@@ -39,18 +38,18 @@ export function Acc() {
                     <div className='mt-5 flex flex-col justify-evenly gap-4'>
                     
                         <div className="flex w-full max-w-sm items-center gap-3 ">
-                            <Label htmlFor="name">{user?.displayName}</Label>
+                            <Label htmlFor="name">Name & Surname</Label>
                             <Input type="text" id="name" placeholder="User's Name and Surname" className='border-chart-4'/>
                         </div>
 
                         <div className="flex w-full max-w-sm items-center gap-4 ">
-                            <Label htmlFor="email">Current Email:{user?.email}</Label>
-                            <Input type="email" id="email" placeholder="Email address" className='border-chart-4' disabled/>
+                            <Label htmlFor="email">Current Email:</Label>
+                            <Input type="email" id="email" placeholder={user?.email ?? undefined} className='border-chart-4' disabled/>
                         </div>
 
                         <div className="flex w-full max-w-sm items-center gap-3 ">
-                            <Label htmlFor="phone">Current Phone:{user?.phoneNumber}</Label>
-                            <Input type="number" id="phone" placeholder="Phone number" className='border-chart-4'/>
+                            <Label htmlFor="phone">Current Phone:</Label>
+                            <Input type="number" id="phone" placeholder={user?.phoneNumber ?? undefined} className='border-chart-4'/>
                         </div>
 
                     </div>

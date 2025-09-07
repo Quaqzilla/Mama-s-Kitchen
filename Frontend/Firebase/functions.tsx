@@ -55,7 +55,7 @@ export function useAuthControls() {
             () => {
                 alert("User logged out");
                 setLogged(false);
-                navigate('/');
+                navigate("/");
             }
         ).catch(
             (error)=>{
@@ -66,10 +66,10 @@ export function useAuthControls() {
 
     const accOpen = () => {
 
-        if(!setLogged){
-            navigate("/loginPage")
+        if(!isLogged){
+            navigate("/loginPage");
         }else{
-            navigate("/userAccount")
+            navigate("/userAccount");
         }
 
     };

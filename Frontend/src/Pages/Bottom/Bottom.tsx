@@ -3,14 +3,14 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import HomeFilledIcon from '@mui/icons-material/HomeFilled';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import {useNavigate} from 'react-router-dom';
-import { useAuthControls } from 'Firebase/functions';
+import { useAuthControls } from '../../../Firebase/functions';
 
 export function Bottom(){
 
     let navigate = useNavigate();
 
     const{
-        accOpen,
+        user,
     } = useAuthControls();
 
     const home = () => {
@@ -43,8 +43,14 @@ export function Bottom(){
     const account = () => {
 
         try{
-            {accOpen}
-            navigate('/userAccount');
+            if(!user){
+                navigate("/loginPage");
+            }else{
+                navigate('/userAccount');
+            }
+
+            console.log(isLogged);
+           
         }catch (error){
             console.error(error);
         }

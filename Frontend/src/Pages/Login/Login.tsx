@@ -18,7 +18,6 @@ export function Login() {
         setEmailAddress,
         password,
         setPassword,
-        isLogged,
         googleSignIn,
         emailSignIn,
     } = useAuthControls();

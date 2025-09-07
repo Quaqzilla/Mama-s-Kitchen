@@ -14,7 +14,7 @@ import {
   PopoverTrigger,
 } from "@/Components/ui/popover"
 import CloseIcon from '@mui/icons-material/Close';
-import { useAuthControls } from "Firebase/functions";
+import { useAuthControls } from "../../../Firebase/functions";
 
 export function Check(){
     const [open, setOpen] = React.useState(false);
