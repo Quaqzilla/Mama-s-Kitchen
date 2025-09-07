@@ -1,0 +1,89 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Page-1" id="j9lzLcSVdXmFjbSVRIWG">
+    <mxGraphModel dx="1111" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NZa8SAql75eyHmafm-1W-2" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" vertex="1" parent="1">
+          <mxGeometry x="10" y="210" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-6" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="760" y="200" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-8" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/API_Management_Services.svg;" vertex="1" parent="1">
+          <mxGeometry x="610" y="210" width="65" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;" edge="1" parent="1" source="NZa8SAql75eyHmafm-1W-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-9" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=default;fontSize=12;spacingTop=3;image=img/lib/ibm/infrastructure/mobile_backend.svg;" vertex="1" parent="1">
+          <mxGeometry x="320" y="215" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#00FF00;" edge="1" parent="1" source="NZa8SAql75eyHmafm-1W-10" target="NZa8SAql75eyHmafm-1W-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-10" value="Account Credit" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="140" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.01;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#FFFF66;strokeColor=#66FF66;" edge="1" parent="1" source="NZa8SAql75eyHmafm-1W-2" target="NZa8SAql75eyHmafm-1W-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-15" value="Backend System&lt;div&gt;(Python or Java)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="295" y="275" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00FF00;exitX=0.99;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="NZa8SAql75eyHmafm-1W-16" target="NZa8SAql75eyHmafm-1W-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="148" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-16" value="Payment Gate" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="138" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#00FF00;" edge="1" parent="1" source="NZa8SAql75eyHmafm-1W-9" target="NZa8SAql75eyHmafm-1W-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-19" value="Firebase&amp;nbsp;&lt;div&gt;API Call&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="275" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-20" value="Query Input" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="280" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-21" value="Database model" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="735" y="285" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#00FF00;" edge="1" parent="1" source="NZa8SAql75eyHmafm-1W-8" target="NZa8SAql75eyHmafm-1W-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-24" value="If User has Inputed&lt;div&gt;an amount to be credited&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="414" y="175" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-27" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="241.25" width="135" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-25" value="Pass an Alert if null" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="414" y="245" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#00FF00;" edge="1" parent="1" source="NZa8SAql75eyHmafm-1W-9" target="NZa8SAql75eyHmafm-1W-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF3333;" edge="1" parent="1" source="NZa8SAql75eyHmafm-1W-30" target="NZa8SAql75eyHmafm-1W-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-30" value="Order Placed" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="155" y="348" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.433;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FF3333;" edge="1" parent="1" source="NZa8SAql75eyHmafm-1W-2" target="NZa8SAql75eyHmafm-1W-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-35" value="Dedut the order total amount from Credit" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="50" width="135" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="NZa8SAql75eyHmafm-1W-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FF3333;" edge="1" parent="1" source="NZa8SAql75eyHmafm-1W-35" target="NZa8SAql75eyHmafm-1W-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

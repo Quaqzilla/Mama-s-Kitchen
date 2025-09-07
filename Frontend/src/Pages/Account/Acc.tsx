@@ -1,15 +1,20 @@
 import * as React from 'react';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Avatar from '@mui/material/Avatar';
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { useAuthControls } from 'Firebase/functions';
 
 export function Acc() {
+    const {
+        back,
+    } = useAuthControls();
+
     return(
         <div className='flex flex-col gap-1'>
            
            <div>
-                <ArrowBackIcon className='m-4 text-3xl'/>
+                <ArrowBackIcon className='m-4 text-3xl' onClick={back}/>
            </div>
 
            <div className="flex flex-col justify-around p-8 items-center">
@@ -57,8 +62,6 @@ export function Acc() {
                     </div>
 
                 </div>
-
-                
            </div>
         </div>
     )

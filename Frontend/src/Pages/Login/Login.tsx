@@ -10,8 +10,19 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import {useAuthControls} from "./../../../Firebase/functions";
 
 export function Login() {
+    const {
+        emailAddress,
+        setEmailAddress,
+        password,
+        setPassword,
+        isLogged,
+        googleSignIn,
+        emailSignIn,
+    } = useAuthControls();
+
   return (
     <div className="flex flex-col justify-evenly bg-sidebar-accent-foreground h-screen">
 
@@ -31,7 +42,7 @@ export function Login() {
                     </CardAction>
                 </CardHeader>
                 <CardContent>
-                    <form>
+                    <form onSubmit={emailSignIn}>
                     <div className="flex flex-col gap-6">
                         <div className="grid gap-2">
                         <Label htmlFor="email">Email</Label>
@@ -39,6 +50,8 @@ export function Login() {
                             id="email"
                             type="email"
                             placeholder="m@example.com"
+                            value={emailAddress}
+                            onChange={e => setEmailAddress(e.target.value)}
                             required
                         />
                         </div>
@@ -52,16 +65,29 @@ export function Login() {
                             Forgot your password?
                             </a>
                         </div>
-                        <Input id="password" type="password" required />
+                        <Input 
+                        id="password" 
+                        type="password" 
+                        value={password}
+                        onChange={e => setPassword(e.target.value)}
+                        required />
                         </div>
                     </div>
                     </form>
                 </CardContent>
                 <CardFooter className="flex-col gap-2">
-                    <Button type="submit" className="w-full bg-muted-foreground">
+                    <Button 
+                    type="submit" 
+                    className="w-full bg-muted-foreground"
+                    onClick={emailSignIn}
+                    >
                     Login
                     </Button>
-                    <Button variant="outline" className="w-full text-black">
+                    <Button 
+                    variant="outline" 
+                    className="w-full text-black"
+                    onClick={googleSignIn}
+                    >
                     Login with Google
                     </Button>
                 </CardFooter>

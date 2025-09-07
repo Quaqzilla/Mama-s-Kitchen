@@ -14,6 +14,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import CloseIcon from '@mui/icons-material/Close';
+import { useAuthControls } from "Firebase/functions";
 
 export function Check(){
     const [open, setOpen] = React.useState(false);
@@ -31,11 +32,15 @@ export function Check(){
         setMain(true);
     };
 
+    const{
+        back,
+    } = useAuthControls();
+
     return(
         <div>
             
             <div className="p-3">
-                <ArrowBackIcon/>
+                <ArrowBackIcon onClick={back}/>
             </div>
 
             {main && (
